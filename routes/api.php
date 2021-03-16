@@ -11,7 +11,7 @@ Route::get('refresh-token', 'Api\Controller@refreshToken');
 ///////////////////////////////////////////////////
 
 Route::group(['middleware' => 'JwtAuthorizer', 'prefix' => 'user'], function () {
-    Route::get('all', 'Api\UserController@index');
+    Route::get('all', 'Api\UserController@index'); 
 });
 
 Route::group(['middleware' => 'JwtAuthorizer'], function () {
