@@ -3,6 +3,7 @@
 /////////////////////////////////////////////////////
 // Authentication & Authorization sidecar starts.. //
 /////////////////////////////////////////////////////
+test
 Route::post('login', 'Api\Auth\LoginController@login');
 Route::post('register', 'Api\Auth\LoginController@register');
 Route::get('refresh-token', 'Api\Controller@refreshToken');
